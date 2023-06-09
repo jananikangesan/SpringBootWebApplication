@@ -16,7 +16,7 @@ public class Product {
     private String type;
     private String sector;
     private Double price;
-    private String Description;
+    private String description;
 
 
     public Integer getId() {
@@ -56,20 +56,22 @@ public class Product {
         this.price = price;
     }
     public String getDescription() {
-        return Description;
+        return description;
     }
     public void setDescription(String description) {
-        Description = description;
+        this.description = description;
     }
     @Override
     public String toString() {
         return "Product{"+
-        "id="+id+"\'"+
-        "name="+name+"\'"+
-        "type="+type+"\'"+
-        "price="+price+"\'"+
-        "category="+category+"\'"+
-        "}";
+                "id="+id+"\'"+
+                "name="+name+"\'"+
+                "type="+type+"\'"+
+                "price="+price+"\'"+
+                "category="+category+"\'"+
+                "sector="+sector+"\'"+
+                "description="+description+"\'"+
+                 "}";
     }
     
  

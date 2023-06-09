@@ -39,6 +39,9 @@ public class DemoApplication implements CommandLineRunner{
 		product1.setName("Tester Product");
 		product1.setCategory("TEST");
 		product1.setType("GENERAL");
+		product1.setDescription("Product1");
+		product1.setPrice(10.0);
+		product1.setSector("Science");
 
 		productRepository.save(product1);
 
@@ -46,6 +49,9 @@ public class DemoApplication implements CommandLineRunner{
 		product2.setName("Another Tester Product");
 		product2.setCategory("TEST");
 		product2.setType("CUSTOM");
+		product2.setDescription("Product2");
+		product2.setPrice(15.0);
+		product2.setSector("IT");
 
 		productRepository.save(product2);
 
